@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News Today</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .navbar {
+            background-color: #bb1919;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .article {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .article-content {
+            padding: 15px;
+        }
+        .article h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .article p {
+            font-size: 14px;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .nav-links {
+                margin-top: 10px;
+            }
+            .nav-links li {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">Sports News Today</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Football</a></li>
+                <li><a href="#">Formula 1</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="grid">
+            <div class="article">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/230816151359-lionel-messi-inter-miami.jpg?c=16x9&q=h_833,w_1480,c_fill" alt="Messi celebrating a goal">
+                <div class="article-content">
+                    <h2>Messi's Spectacular Hat-trick Leads Inter Miami to Victory</h2>
+                    <p>Lionel Messi continues to dazzle in the MLS, scoring three goals in a thrilling match against Orlando City.</p>
+                </div>
+        
+            </div>
+            <div class="article">
+                <img src="https://assets.goal.com/images/v3/bltf62d5939b8f7a5a6/GettyImages-2154409480.jpg?auto=webp&format=pjpg&width=3840&quality=60" alt="Ronaldo in Al Nassr jersey">
+                <div class="article-content">
+                    <h2>Ronaldo Breaks Another Record in Saudi Pro League</h2>
+                    <p>Cristiano Ronaldo sets a new goalscoring record in the Saudi Pro League, cementing his status as a football legend.</p>
+                </div>
+            </div>
+            <div class="article">
+                <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2023/04/02/265504.jpg" alt="Max Verstappen on podium">
+                <div class="article-content">
+                    <h2>Verstappen Dominates Australian Grand Prix</h2>
+                    <p>Red Bull's Max Verstappen secures his third consecutive win of the season at the Australian Grand Prix.</p>
+                </div>
+            </div>
+            <div class="article">
+                <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/44EF/production/_133074671_vettel.jpg" alt="Sebastian Vettel at a press conference">
+                <div class="article-content">
+                    <h2>Vettel Hints at Potential F1 Comeback</h2>
+                    <p>Four-time world champion Sebastian Vettel suggests he might consider returning to Formula 1 under the right circumstances.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
